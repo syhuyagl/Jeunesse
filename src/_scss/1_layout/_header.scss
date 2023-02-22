@@ -1,0 +1,48 @@
+/* Header
+------------------------------------------------------------*/
+.c-header {
+    position: relative;
+
+    .c-header__logo {
+        text-align: center;
+        margin-top: 63px;
+
+        img {
+            width: 192px;
+        }
+    }
+
+    .c-header__nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 840px;
+        margin: 43px auto 0;
+    }
+
+    .c-header__title {
+        display: block;
+        text-align: center;
+    }
+
+    .c-header__titleen {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .c-header__titlejp {
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: #989898;
+    }
+}
+
+.c-sns {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    img {
+        width: 21px;
+    }
+}

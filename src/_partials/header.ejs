@@ -1,0 +1,31 @@
+<header>
+  <div class="c-header l-container">
+    <div class="c-header__logo"><a href="./index.html"><img src="./assets/img/logo.svg" alt="Logo"></a></div>
+      <nav>
+        <ul class="c-header__nav">
+          <% if (typeof linklists != 'undefined') { %>
+            <% linklists.main && linklists.main.forEach(link => { %>
+              <li>
+                <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>">
+                  <span class="c-header__title c-header__titleen">
+                    <%= link.title %>
+                  </span>
+                  <span class="c-header__title c-header__titlejp">
+                    <%= link.titlejp %>
+                  </span>
+                </a>
+              </li>
+            <% }) %>
+          <% } %>
+        </ul>
+      </nav>
+      <div class="c-sns">
+          <a href="#" target="_blank">
+            <img src="./assets/img/fb.svg" alt="">
+          </a>
+          <a href="#" target="_blank">
+            <img src="./assets/img/fb.svg" alt="">
+          </a>
+      </div>
+  </div>
+</header>

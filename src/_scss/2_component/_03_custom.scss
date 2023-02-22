@@ -1,0 +1,35 @@
+.c-custom {
+    padding: 93px 0 30px;
+
+    .c-custom__title {
+        font-size: 2.5rem;
+        line-height: 1.72;
+        letter-spacing: 0.08em;
+        color: #000;
+        text-align: center;
+    }
+
+    .c-custom__samples {
+        display: flex;
+        margin-top: 34px;
+        justify-content: space-between;
+    }
+
+    .c-custom__images {
+        display: flex;
+        justify-content: space-between;
+        width: 64.4%;
+    }
+
+    .c-custom__content {
+        width: 30%;
+        color: #000;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.96;
+    }
+
+    .c-custom__image {
+        width: 30.9%;
+    }
+}

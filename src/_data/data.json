@@ -1,0 +1,36 @@
+{
+  "linklists": {
+    "main": [
+      {
+        "title": "towel",
+        "titlejp":"タオル",
+        "url": "/"
+      },
+      {
+        "title": "baby & kids",
+        "titlejp":"ベビー・子ども服",
+        "url": "/about.html"
+      },
+      {
+        "title": "ladies' wear",
+        "titlejp":"婦人服",
+        "url": "/nested/"
+      },
+      {
+        "title": "Interior goods",
+        "titlejp":"生活雑貨",
+        "url": "/nested/"
+      },
+      {
+        "title": "shop Information",
+        "titlejp":"店舗案内",
+        "url": "/nested/"
+      },
+      {
+        "title": "blog",
+        "titlejp":"ブログ",
+        "url": "/nested/"
+      }
+    ]
+  }
+}

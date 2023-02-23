@@ -1,324 +1,337 @@
 .c-products {
-    padding-top: 92px;
+  padding-top: 92px;
+  @include tab {
+    padding-top: 40px;
+  }
+  .c-products__title {
+  }
 
-    .c-products__title {
+  .c-products__sectiontitle {
+    width: fit-content;
+    position: relative;
+    font-family: "Sawarabi Mincho", serif;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 117px;
+      height: 102px;
+      background: url(../../assets/img/towel-bg.png);
+      right: -92px;
+      top: 22px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: block;
+    }
+    @include tab {
+      &::after {
+        width: 81px;
+        height: 87px;
+        right: -56px;
+        top: 34px;
+      }
+    }
+  }
+
+  .c-products__container {
+    position: relative;
+    margin-top: 142px;
+  }
+
+  .c-products__section {
+    background: #f7f4e6;
+    width: 90.1%;
+    padding: 71px 50px 77px;
+    @include tab {
+      padding: 50px 30px 61px;
+    }
+  }
+
+  .c-products__sectionsample {
+    position: absolute;
+  }
+
+  .c-products__text {
+    padding-left: 4px;
+  }
+
+  .c-products__sectiontitleen {
+    font-size: 7.9rem;
+    font-weight: 700;
+    color: #000;
+    line-height: 0.8;
+    display: block;
+  }
+
+  .c-products__sectionhead {
+    margin-top: 54px;
+    margin-bottom: 11px;
+  }
+
+  .c-products__sectiondes {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.94;
+  }
+
+  .c-products__sectionaddress {
+    margin-top: 21px;
+  }
+
+  .c-products__sectiontitlejp {
+    font-size: 1.4rem;
+    line-height: 1.75;
+    font-weight: 300;
+    display: block;
+    padding-top: 9px;
+    padding-left: 5px;
+    letter-spacing: 3px;
+    color: #000;
+  }
+
+  .c-products__towels1 {
+    top: 0;
+    transform: translateY(-26.7%);
+    width: 53.4%;
+    right: 0;
+  }
+
+  .c-products__towels2 {
+    left: 50%;
+    transform: translate(50%, 0);
+    transform: translate(-17%, 0);
+    width: 20.3%;
+    bottom: 21px;
+  }
+
+  .c-products__towels3 {
+    right: 0;
+    width: 26.7%;
+    bottom: -16%;
+  }
+
+  .c-products__items {
+    display: flex;
+    margin-top: 131px;
+    justify-content: center;
+  }
+
+  .c-products__item {
+    margin-right: 23px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .c-product__itemimg {
+    img {
+      width: 157px;
+    }
+  }
+
+  .c-product__itemtitle {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    max-width: 86px;
+    text-align: center;
+    margin: 15px auto 5px;
+    color: #000;
+  }
+
+  .c-products__price {
+    font-weight: 500;
+    line-height: 1.46;
+    font-size: 1.4rem;
+    color: #989898;
+    text-align: center;
+    display: block;
+  }
+
+  .c-products__section2 {
+    margin-left: auto;
+  }
+
+  .c-products__section2title {
+    margin-left: auto;
+    padding-right: 109px;
+  }
+
+  .c-products__reverse1 {
+    top: 0;
+    transform: translateY(-26.7%);
+    width: 53.4%;
+    left: 0;
+  }
+
+  .c-products__reverse2 {
+    right: 46.6%;
+    transform: translate(0, 0);
+    width: 20.3%;
+    bottom: 22.5%;
+  }
+
+  .c-products__reverse3 {
+    left: 0;
+    width: 26.7%;
+    bottom: 5.2%;
+  }
+
+  .c-products__section2head {
+    text-align: end;
+  }
+
+  .c-products__section2des {
+    width: fit-content;
+    margin-left: auto;
+  }
+
+  .c-products__section2address {
+    text-align: end;
+  }
+
+  .c-products__baby {
+    margin-top: 259px;
+
+    .c-products__section {
+      background: #e4f1ff;
+      padding: 73px 55px 74px;
     }
 
     .c-products__sectiontitle {
-        width: fit-content;
-        position: relative;
-        font-family: "Sawarabi Mincho", serif;
-
-        &::after {
-            content: "";
-            position: absolute;
-            width: 117px;
-            height: 102px;
-            background: url(../../assets/img/towel-bg.png);
-            right: -92px;
-            top: 22px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            display: block;
-        }
-    }
-
-    .c-products__container {
-        position: relative;
-        margin-top: 142px;
-    }
-
-    .c-products__section {
-        background: #f7f4e6;
-        width: 90.1%;
-        padding: 71px 50px 77px;
-    }
-
-    .c-products__sectionsample {
-        position: absolute;
-    }
-
-    .c-products__text {
-        padding-left: 4px;
-    }
-
-    .c-products__sectiontitleen {
-        font-size: 7.9rem;
-        font-weight: 700;
-        color: #000;
-        line-height: 0.8;
-        display: block;
-    }
-
-    .c-products__sectionhead {
-        margin-top: 54px;
-        margin-bottom: 11px;
-    }
-
-    .c-products__sectiondes {
-        font-size: 1.4rem;
-        font-weight: 500;
-        color: #000;
-        line-height: 1.94;
-    }
-
-    .c-products__sectionaddress {
-        margin-top: 21px;
+      &::after {
+        background: url(../../assets/img/baby-bg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 175px;
+        height: 175px;
+        right: -60px;
+        top: -20px;
+      }
     }
 
     .c-products__sectiontitlejp {
-        font-size: 1.4rem;
-        line-height: 1.75;
-        font-weight: 300;
-        display: block;
-        padding-top: 9px;
-        padding-left: 5px;
-        letter-spacing: 3px;
-        color: #000;
+      margin-top: 16px;
     }
 
-    .c-products__towels1 {
-        top: 0;
-        transform: translateY(-26.7%);
-        width: 53.4%;
-        right: 0;
+    .c-products__sectionhead {
+      margin-top: 51px;
+      padding-right: 105px;
     }
 
-    .c-products__towels2 {
-        left: 50%;
-        transform: translate(50%, 0);
-        transform: translate(-17%, 0);
-        width: 20.3%;
-        bottom: 21px;
+    .c-products__sectiondes {
+      line-height: 2.16;
+    }
+  }
+
+  .c-products__itemsbaby {
+    margin-top: 56px;
+  }
+
+  .c-products__lady {
+    margin-top: 261px;
+
+    .c-products__section {
+      background: #f4e5e8;
     }
 
-    .c-products__towels3 {
-        right: 0;
-        width: 26.7%;
-        bottom: -16%;
+    .c-products__sectiontitle {
+      &::after {
+        background: url(../../assets/img/lady-bg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 66px;
+        height: 290px;
+        right: -106px;
+        top: -37px;
+      }
     }
 
-    .c-products__items {
-        display: flex;
-        margin-top: 131px;
-        justify-content: center;
+    .c-products__sectiontitlejp {
+      margin-top: 16px;
     }
 
-    .c-products__item {
-        margin-right: 23px;
-
-        &:last-child {
-            margin-right: 0;
-        }
+    .c-products__lady1 {
+      top: 0;
+      transform: translateY(-26.7%);
+      width: 53.4%;
+      right: 0;
     }
 
-    .c-product__itemimg {
-        img {
-            width: 157px;
-        }
+    .c-products__lady2 {
+      bottom: 15.5%;
+      left: 50%;
+      transform: translate(-17%, 0);
+      width: 20.3%;
     }
 
-    .c-product__itemtitle {
-        font-weight: 700;
-        font-size: 1.4rem;
-        line-height: 1.5;
-        max-width: 86px;
-        text-align: center;
-        margin: 15px auto 5px;
-        color: #000;
+    .c-products__lady3 {
+      bottom: -0.2%;
+      right: 0;
+      width: 26.7%;
+    }
+  }
+
+  .c-products__itemslady {
+    margin-top: 63px;
+  }
+
+  .c-products__interior {
+    margin-top: 259px;
+
+    .c-products__section {
+      background: #e4f1ff;
+      padding: 73px 55px 74px;
     }
 
-    .c-products__price {
-        font-weight: 500;
-        line-height: 1.46;
-        font-size: 1.4rem;
-        color: #989898;
-        text-align: center;
-        display: block;
-    }
-
-    .c-products__section2 {
-        margin-left: auto;
+    .c-products__sectiontitle {
+      &::after {
+        background: url(../../assets/img/baby-bg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 175px;
+        height: 175px;
+        right: -60px;
+        top: -20px;
+      }
     }
 
     .c-products__section2title {
-        margin-left: auto;
-        padding-right: 109px;
+      padding-right: 63px;
     }
 
-    .c-products__reverse1 {
-        top: 0;
-        transform: translateY(-26.7%);
-        width: 53.4%;
-        left: 0;
-    }
-
-    .c-products__reverse2 {
-        right: 46.6%;
-        transform: translate(0, 0);
-        width: 20.3%;
-        bottom: 22.5%;
-    }
-
-    .c-products__reverse3 {
-        left: 0;
-        width: 26.7%;
-        bottom: 5.2%;
+    .c-products__sectiontitlejp {
+      margin-top: 29px;
     }
 
     .c-products__section2head {
-        text-align: end;
+      margin-top: 51px;
+      padding-right: 88px;
     }
 
-    .c-products__section2des {
-        width: fit-content;
-        margin-left: auto;
+    .c-products__sectiondes {
+      line-height: 1.96;
+
+      padding-right: 42px;
     }
+  }
 
-    .c-products__section2address {
-        text-align: end;
-    }
+  .c-products__interior1 {
+    top: 1.2%;
+  }
 
-    .c-products__baby {
-        margin-top: 259px;
+  .c-products__interior2 {
+    bottom: 12.6%;
+  }
 
-        .c-products__section {
-            background: #e4f1ff;
-            padding: 73px 55px 74px;
-        }
+  .c-products__interior3 {
+    bottom: 3.4%;
+  }
 
-        .c-products__sectiontitle {
-            &::after {
-                background: url(../../assets/img/baby-bg.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 175px;
-                height: 175px;
-                right: -60px;
-                top: -20px;
-            }
-        }
-
-        .c-products__sectiontitlejp {
-            margin-top: 16px;
-        }
-
-        .c-products__sectionhead {
-            margin-top: 51px;
-            padding-right: 105px;
-        }
-
-        .c-products__sectiondes {
-            line-height: 2.16;
-        }
-    }
-
-    .c-products__itemsbaby {
-        margin-top: 56px;
-    }
-
-    .c-products__lady {
-        margin-top: 261px;
-
-        .c-products__section {
-            background: #f4e5e8;
-        }
-
-        .c-products__sectiontitle {
-            &::after {
-                background: url(../../assets/img/lady-bg.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 66px;
-                height: 290px;
-                right: -106px;
-                top: -37px;
-            }
-        }
-
-        .c-products__sectiontitlejp {
-            margin-top: 16px;
-        }
-
-        .c-products__lady1 {
-            top: 0;
-            transform: translateY(-26.7%);
-            width: 53.4%;
-            right: 0;
-        }
-
-        .c-products__lady2 {
-            bottom: 15.5%;
-            left: 50%;
-            transform: translate(-17%, 0);
-            width: 20.3%;
-        }
-
-        .c-products__lady3 {
-            bottom: -0.2%;
-            right: 0;
-            width: 26.7%;
-        }
-    }
-
-    .c-products__itemslady {
-        margin-top: 63px;
-    }
-
-    .c-products__interior {
-        margin-top: 259px;
-
-        .c-products__section {
-            background: #e4f1ff;
-            padding: 73px 55px 74px;
-        }
-
-        .c-products__sectiontitle {
-            &::after {
-                background: url(../../assets/img/baby-bg.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 175px;
-                height: 175px;
-                right: -60px;
-                top: -20px;
-            }
-        }
-
-        .c-products__section2title {
-            padding-right: 63px;
-        }
-
-        .c-products__sectiontitlejp {
-            margin-top: 29px;
-        }
-
-        .c-products__section2head {
-            margin-top: 51px;
-            padding-right: 88px;
-        }
-
-        .c-products__sectiondes {
-            line-height: 1.96;
-
-            padding-right: 42px;
-        }
-    }
-
-    .c-products__interior1 {
-        top: 1.2%;
-    }
-
-    .c-products__interior2 {
-        bottom: 12.6%;
-    }
-
-    .c-products__interior3 {
-        bottom: 3.4%;
-    }
-
-    .c-products__itemsinterior {
-        margin-top: 52px;
-        margin-bottom: 100px;
-    }
+  .c-products__itemsinterior {
+    margin-top: 52px;
+    margin-bottom: 100px;
+  }
 }

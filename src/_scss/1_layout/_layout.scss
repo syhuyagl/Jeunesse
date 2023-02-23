@@ -17,4 +17,16 @@ body {
     margin: 0 auto;
 }
 //-------------------------------------------------------
+.is-pc {
+    display: block;
+    @include tab {
+        display: none;
+    }
+}
 
+.is-tab {
+    display: none;
+    @include tab {
+        display: block;
+    }
+}

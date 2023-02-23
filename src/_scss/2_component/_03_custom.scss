@@ -15,12 +15,18 @@
         display: flex;
         margin-top: 34px;
         justify-content: space-between;
+        @include tab {
+            flex-direction: column;
+        }
     }
 
     .c-custom__images {
         display: flex;
         justify-content: space-between;
         width: 64.4%;
+        @include tab {
+            width: 100%;
+        }
     }
 
     .c-custom__content {
@@ -29,6 +35,9 @@
         font-weight: 500;
         line-height: 1.96;
         width: 30.4%;
+        @include tab {
+            width: 100%;
+        }
     }
 
     .c-custom__description {
@@ -42,6 +51,9 @@
 
     .c-custom__contact {
         margin-top: 43px;
+        @include tab {
+            margin-top: 20px;
+        }
     }
 
     .c-custom__tel {

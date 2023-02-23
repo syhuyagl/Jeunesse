@@ -81,6 +81,7 @@
     margin-bottom: 11px;
     font-size: 1.6rem;
     @include sp {
+      margin-top: 25px;
       font-size: 1.6rem * 0.75;
     }
   }
@@ -97,6 +98,10 @@
 
   .c-products__sectionaddress {
     margin-top: 21px;
+    font-weight: 500;
+    @include sp {
+      font-size: 1.4rem * 0.75;
+    }
   }
 
   .c-products__sectiontitlejp {
@@ -224,6 +229,9 @@
 
   .c-products__section2head {
     text-align: end;
+    @include sp {
+      text-align: left;
+    }
   }
 
   .c-products__section2des {
@@ -244,8 +252,9 @@
   .c-products__baby {
     margin-top: 259px;
     @include sp {
-        margin-top: 150px;
+      margin-top: 150px;
     }
+
     .c-products__section {
       background: #e4f1ff;
       padding: 73px 55px 74px;
@@ -266,9 +275,9 @@
       }
       @include sp {
         &::after {
-          width: 175px;
-          height: 175px;
-          right: -60px;
+          width: 117px;
+          height: 162px;
+          right: -78px;
           top: -20px;
         }
       }
@@ -284,6 +293,9 @@
       @include tab {
         padding-right: 31px;
       }
+      @include sp {
+        margin-top: 25px;
+      }
     }
 
     .c-products__sectiondes {
@@ -298,8 +310,9 @@
   .c-products__lady {
     margin-top: 261px;
     @include sp {
-        margin-top: 130px;
+      margin-top: 130px;
     }
+
     .c-products__section {
       background: #f4e5e8;
     }
@@ -359,6 +372,9 @@
 
   .c-products__interior {
     margin-top: 259px;
+    @include sp {
+      margin-top: 130px;
+    }
 
     .c-products__section {
       background: #e4f1ff;
@@ -378,6 +394,14 @@
         right: -26px;
         top: 64px;
       }
+      @include sp {
+        &::after {
+          width: 158px;
+          height: 136px;
+          right: -91px;
+          top: 42px;
+        }
+      }
     }
 
     .c-products__section2title {
@@ -396,6 +420,9 @@
       padding-right: 88px;
       @include tab {
         padding-right: 49px;
+      }
+      @include sp {
+        margin-top: 25px;
       }
     }
 
@@ -431,20 +458,24 @@
     margin-top: 52px;
     margin-bottom: 100px;
   }
+
   .c-product__samples {
     display: flex;
     flex-wrap: wrap;
     margin-top: 45px;
     justify-content: space-between;
   }
+
   .c-products__sectionsamplesp {
     width: 100%;
     transform: none;
     margin-bottom: 10px;
+
     &:nth-child(2) {
       width: 48.5%;
       transform: none;
     }
+
     &:nth-child(3) {
       width: 48.5%;
       transform: none;

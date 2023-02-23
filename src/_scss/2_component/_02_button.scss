@@ -1,34 +1,37 @@
 .c-button {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    border: 1px solid #000;
-    padding: 11px 0 9px;
-
-    .c-button__text {
-        font-size: 1.7rem;
-        font-weight: 500;
-        color: #000;
-        text-align: center;
-        display: block;
-        position: relative;
-        line-height: 1.7;
-        font-family: "Noto Serif JP", serif;
-        letter-spacing: 1.7px;
-        padding-left: 29px;
-        @include sp {
-            font-size: 1.7rem * 0.75;
-        }
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  padding: 11px 0 9px;
+  @include sp {
+    max-width: 300px;
+  }
+  .c-button__text {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    display: block;
+    position: relative;
+    line-height: 1.7;
+    font-family: "Noto Serif JP", serif;
+    letter-spacing: 1.7px;
+    padding-left: 29px;
+    @include sp {
+      font-size: 1.7rem * 0.75;
     }
+  }
 
-    .c-button__label {
-        font-size: 1.7rem;
-        font-weight: 500;
-        color: #5a9da4;
-        position: absolute;
-        left: 96px;
-        @include sp {
-            font-size: 1.7rem * 0.75;
-        }
+  .c-button__label {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #5a9da4;
+    position: absolute;
+    left: 96px;
+    @include sp {
+      font-size: 1.7rem * 0.75;
+      left: 18px;
     }
+  }
 }

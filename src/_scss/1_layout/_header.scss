@@ -22,13 +22,13 @@
     .c-header__title {
         display: block;
         text-align: center;
-        font-family: "Sawarabi Mincho", serif;
     }
 
     .c-header__titleen {
         font-size: 1.6rem;
         font-weight: 700;
         line-height: 1.4;
+        font-family: "Sawarabi Mincho", serif;
         color: #000;
     }
 
@@ -42,8 +42,12 @@
 
 .c-sns {
     position: absolute;
-    top: 0;
+    top: -9px;
     right: 0;
+
+    a:first-child {
+        margin-right: 9px;
+    }
 
     img {
         width: 21px;

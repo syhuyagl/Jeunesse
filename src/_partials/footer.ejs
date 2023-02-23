@@ -1,5 +1,33 @@
 <footer class="c-footer">
-  <div class="l-container">
-    ©2019 ALLGROW LABO Inc.
+  <div class="l-container c-footer__wrapper">
+    <nav>
+      <ul class="c-footer__nav">
+        <% if (typeof linklists != 'undefined') { %>
+          <% linklists.main && linklists.main.forEach(link => { %>
+            <li>
+              <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>">
+                <span class="c-footer__title c-footer__titleen">
+                  <%= link.title %>
+                </span>
+                <span class="c-footer__title c-footer__titlejp">
+                  <%= link.titlejp %>
+                </span>
+              </a>
+            </li>
+          <% }) %>
+        <% } %>
+      </ul>
+    </nav>
+    <p class="c-footer__copyright">
+      Copyright ©junes All Rights Reserved.
+    </p>
+    <div class="c-sns">
+      <a href="#" target="_blank">
+        <img src="./assets/img/fb.svg" alt="">
+      </a>
+      <a href="#" target="_blank">
+        <img src="./assets/img/unknow.svg" alt="">
+      </a>
+    </div>
   </div>
 </footer>

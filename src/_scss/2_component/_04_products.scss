@@ -104,6 +104,10 @@
         transform: translate(-17%, 0);
         width: 20.3%;
         bottom: 21px;
+        @include tab {
+            transform: translate(33%, 0);
+            bottom: 21%;
+        }
     }
 
     .c-products__towels3 {
@@ -158,6 +162,9 @@
     .c-products__section2title {
         margin-left: auto;
         padding-right: 109px;
+        @include tab {
+            padding-right: 31px;
+        }
     }
 
     .c-products__reverse1 {
@@ -172,12 +179,18 @@
         transform: translate(0, 0);
         width: 20.3%;
         bottom: 22.5%;
+        @include tab {
+            bottom: 39.5%;
+        }
     }
 
     .c-products__reverse3 {
         left: 0;
         width: 26.7%;
         bottom: 5.2%;
+        @include tab {
+            bottom: 8.2%;
+        }
     }
 
     .c-products__section2head {
@@ -187,6 +200,9 @@
     .c-products__section2des {
         width: fit-content;
         margin-left: auto;
+        @include tab {
+            width: 48%;
+        }
     }
 
     .c-products__section2address {
@@ -199,6 +215,9 @@
         .c-products__section {
             background: #e4f1ff;
             padding: 73px 55px 74px;
+            @include tab {
+                padding: 50px 30px 61px;
+            }
         }
 
         .c-products__sectiontitle {
@@ -220,6 +239,9 @@
         .c-products__sectionhead {
             margin-top: 51px;
             padding-right: 105px;
+            @include tab {
+                padding-right: 31px;
+            }
         }
 
         .c-products__sectiondes {
@@ -248,6 +270,14 @@
                 right: -106px;
                 top: -37px;
             }
+            @include tab {
+                &::after {
+                    width: 66px;
+                    height: 199px;
+                    right: -57px;
+                    top: -15px;
+                }
+            }
         }
 
         .c-products__sectiontitlejp {
@@ -266,6 +296,10 @@
             left: 50%;
             transform: translate(-17%, 0);
             width: 20.3%;
+            @include tab {
+                bottom: 31.5%;
+                left: 57%;
+            }
         }
 
         .c-products__lady3 {
@@ -285,6 +319,9 @@
         .c-products__section {
             background: #e4f1ff;
             padding: 73px 55px 74px;
+            @include tab {
+                padding: 50px 12px 61px;
+            }
         }
 
         .c-products__sectiontitle {
@@ -301,6 +338,9 @@
 
         .c-products__section2title {
             padding-right: 63px;
+            @include tab {
+                padding-right: 22px;
+            }
         }
 
         .c-products__sectiontitlejp {
@@ -310,12 +350,21 @@
         .c-products__section2head {
             margin-top: 51px;
             padding-right: 88px;
+            @include tab {
+                padding-right: 49px;
+            }
         }
 
         .c-products__sectiondes {
             line-height: 1.96;
-
             padding-right: 42px;
+            @include tab {
+                padding-right: 0;
+            }
+        }
+
+        .c-products__section2des {
+            width: 50.6%;
         }
     }
 

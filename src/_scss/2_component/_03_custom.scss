@@ -2,7 +2,6 @@
     padding: 92px 0 30px;
     @include sp {
         padding: 45px 0 15px;
-
     }
 
     .c-custom__title {
@@ -46,7 +45,7 @@
             width: 100%;
         }
         @include sp {
-            font-size: 1.4rem*0.75;
+            font-size: 1.4rem * 0.75;
         }
     }
 
@@ -68,14 +67,14 @@
     .c-custom__tel {
         font-size: 1.7rem;
         @include sp {
-            font-size: 1.7rem*0.75;
+            font-size: 1.7rem * 0.75;
         }
     }
 
     .c-custom__hour {
         font-size: 1.4rem;
         @include sp {
-            font-size: 1.4rem*0.75;
+            font-size: 1.4rem * 0.75;
         }
     }
 }

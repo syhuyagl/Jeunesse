@@ -2,12 +2,6 @@
 ------------------------------------------------------------*/
 .c-header {
     position: relative;
-    @include tab {
-        display: block;
-    }
-    @include sp {
-        display: none;
-    }
 
     .c-header__logo {
         text-align: center;
@@ -23,6 +17,15 @@
                 width: 132px;
             }
         }
+        @include sp {
+            padding: 22px 0;
+            margin-top: 0;
+            text-align: left;
+
+            img {
+                width: 82px;
+            }
+        }
     }
 
     .c-header__nav {
@@ -30,6 +33,12 @@
         justify-content: space-between;
         max-width: 840px;
         margin: 43px auto 0;
+        @include tab {
+            display: block;
+        }
+        @include sp {
+            display: none;
+        }
     }
 
     .c-header__title {
@@ -51,6 +60,20 @@
         color: #989898;
         font-family: "Noto Serif JP", serif;
     }
+
+    .c-header__overlay {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: #fff;
+        z-index: 999;
+    }
+
+    .c-header__navoverlay {
+        li {
+            padding: 15px 0;
+        }
+    }
 }
 
 .c-sns {
@@ -65,4 +88,11 @@
     img {
         width: 21px;
     }
+
+    
+}
+
+.c-sns__overlay {
+    position: static;
+    text-align: center;
 }

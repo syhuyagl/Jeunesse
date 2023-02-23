@@ -2,57 +2,57 @@
 footer
 ------------------------------------------------------------*/
 .c-footer {
-  padding-top: 25px;
+    padding-top: 25px;
 
-  .c-footer__wrapper {
-    position: relative;
-  }
-
-  .c-footer__nav {
-    display: flex;
-    justify-content: space-between;
-    max-width: 840px;
-    margin: 43px auto 0;
-    @include sp {
-      display: none;
+    .c-footer__wrapper {
+        position: relative;
     }
-  }
 
-  .c-footer__title {
-    display: block;
-    text-align: center;
-  }
-
-  .c-footer__titleen {
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.4;
-    font-family: "Sawarabi Mincho", serif;
-    color: #000;
-  }
-
-  .c-footer__titlejp {
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: #989898;
-    font-family: "Noto Serif JP", serif;
-  }
-
-  .c-footer__copyright {
-    font-family: "Sawarabi Mincho", serif;
-    font-size: 1.4rem;
-    letter-spacing: 0.08em;
-    line-height: 1.75;
-    text-align: center;
-    margin-top: 43px;
-    margin-bottom: 27px;
-    @include sp {
-      font-size: 1.4rem * 0.75;
-      margin-top: 20px;
+    .c-footer__nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 840px;
+        margin: 43px auto 0;
+        @include sp {
+            display: none;
+        }
     }
-  }
 
-  .c-sns {
-    top: 76%;
-  }
+    .c-footer__title {
+        display: block;
+        text-align: center;
+    }
+
+    .c-footer__titleen {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.4;
+        font-family: "Sawarabi Mincho", serif;
+        color: #000;
+    }
+
+    .c-footer__titlejp {
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: #989898;
+        font-family: "Noto Serif JP", serif;
+    }
+
+    .c-footer__copyright {
+        font-family: "Sawarabi Mincho", serif;
+        font-size: 1.4rem;
+        letter-spacing: 0.08em;
+        line-height: 1.75;
+        text-align: center;
+        margin-top: 43px;
+        margin-bottom: 27px;
+        @include sp {
+            font-size: 1.4rem * 0.75;
+            margin-top: 20px;
+        }
+    }
+
+    .c-sns {
+        top: 76%;
+    }
 }

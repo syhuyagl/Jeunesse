@@ -1,66 +1,68 @@
 /* Header
 ------------------------------------------------------------*/
 .c-header {
-  position: relative;
-  @include tab {
-    display: block;
-  }
-  @include sp {
-    display: none;
-  }
-  .c-header__logo {
-    text-align: center;
-    margin-top: 63px;
-
-    img {
-      width: 192px;
-    }
+    position: relative;
     @include tab {
-      margin-top: 38px;
-      img {
-        width: 132px;
-      }
+        display: block;
     }
-  }
+    @include sp {
+        display: none;
+    }
 
-  .c-header__nav {
-    display: flex;
-    justify-content: space-between;
-    max-width: 840px;
-    margin: 43px auto 0;
-  }
+    .c-header__logo {
+        text-align: center;
+        margin-top: 63px;
 
-  .c-header__title {
-    display: block;
-    text-align: center;
-  }
+        img {
+            width: 192px;
+        }
+        @include tab {
+            margin-top: 38px;
 
-  .c-header__titleen {
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.4;
-    font-family: "Sawarabi Mincho", serif;
-    color: #000;
-  }
+            img {
+                width: 132px;
+            }
+        }
+    }
 
-  .c-header__titlejp {
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: #989898;
-    font-family: "Noto Serif JP", serif;
-  }
+    .c-header__nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 840px;
+        margin: 43px auto 0;
+    }
+
+    .c-header__title {
+        display: block;
+        text-align: center;
+    }
+
+    .c-header__titleen {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.4;
+        font-family: "Sawarabi Mincho", serif;
+        color: #000;
+    }
+
+    .c-header__titlejp {
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: #989898;
+        font-family: "Noto Serif JP", serif;
+    }
 }
 
 .c-sns {
-  position: absolute;
-  top: -9px;
-  right: 0;
+    position: absolute;
+    top: -9px;
+    right: 0;
 
-  a:first-child {
-    margin-right: 9px;
-  }
+    a:first-child {
+        margin-right: 9px;
+    }
 
-  img {
-    width: 21px;
-  }
+    img {
+        width: 21px;
+    }
 }

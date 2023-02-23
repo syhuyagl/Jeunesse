@@ -6,6 +6,7 @@ footer
 
     .c-footer__wrapper {
         position: relative;
+      
     }
 
     .c-footer__nav {
@@ -13,6 +14,9 @@ footer
         justify-content: space-between;
         max-width: 840px;
         margin: 43px auto 0;
+        @include sp {
+            display: none;
+        }
     }
 
     .c-footer__title {

@@ -33,3 +33,12 @@ body {
         display: block;
     }
 }
+.is-sp {
+    display: none;
+    @include tab {
+        display: none;
+    }
+    @include sp {
+        display: block;
+    }
+}

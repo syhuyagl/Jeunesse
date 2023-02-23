@@ -16,6 +16,9 @@
         font-family: "Noto Serif JP", serif;
         letter-spacing: 1.7px;
         padding-left: 29px;
+        @include sp {
+            font-size: 1.7rem * 0.75;
+        }
     }
 
     .c-button__label {
@@ -24,5 +27,8 @@
         color: #5a9da4;
         position: absolute;
         left: 96px;
+        @include sp {
+            font-size: 1.7rem * 0.75;
+        }
     }
 }

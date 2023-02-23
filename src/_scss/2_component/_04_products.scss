@@ -288,8 +288,8 @@
     }
 
     .c-products__sectionhead {
-      margin-top: 51px;
-      padding-right: 105px;
+        margin-top: 52px;
+        padding-right: 110px;
       @include tab {
         padding-right: 31px;
       }
@@ -304,7 +304,7 @@
   }
 
   .c-products__itemsbaby {
-    margin-top: 56px;
+    margin-top: 54px;
   }
 
   .c-products__lady {
@@ -316,7 +316,12 @@
     .c-products__section {
       background: #f4e5e8;
     }
-
+    .c-products__sectionhead{
+        margin-top: 55px;
+    }
+    .c-products__sectionaddress{
+        margin-top: 25px;
+    }
     .c-products__sectiontitle {
       &::after {
         background: url(../../assets/img/lady-bg.png);
@@ -367,7 +372,7 @@
   }
 
   .c-products__itemslady {
-    margin-top: 63px;
+    margin-top: 61px;
   }
 
   .c-products__interior {
@@ -417,7 +422,7 @@
 
     .c-products__section2head {
       margin-top: 51px;
-      padding-right: 88px;
+      padding-right: 94px;
       @include tab {
         padding-right: 49px;
       }
@@ -435,7 +440,9 @@
     }
 
     .c-products__section2des {
-      width: 50.6%;
+      @include tab {
+        width: 50.6%;
+      }
       @include sp {
         width: 100%;
       }

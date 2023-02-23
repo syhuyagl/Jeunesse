@@ -1,5 +1,5 @@
 .c-products {
-    padding-top: 100px;
+    padding-top: 92px;
 
     .c-products__title {
     }
@@ -7,6 +7,7 @@
     .c-products__sectiontitle {
         width: fit-content;
         position: relative;
+        font-family: "Sawarabi Mincho", serif;
 
         &::after {
             content: "";
@@ -14,8 +15,8 @@
             width: 117px;
             height: 102px;
             background: url(../../assets/img/towel-bg.png);
-            right: -75px;
-            top: 17px;
+            right: -92px;
+            top: 22px;
             background-size: contain;
             background-repeat: no-repeat;
             display: block;
@@ -30,11 +31,15 @@
     .c-products__section {
         background: #f7f4e6;
         width: 90.1%;
-        padding: 78px 55px 80px;
+        padding: 71px 50px 77px;
     }
 
     .c-products__sectionsample {
         position: absolute;
+    }
+
+    .c-products__text {
+        padding-left: 4px;
     }
 
     .c-products__sectiontitleen {
@@ -46,7 +51,7 @@
     }
 
     .c-products__sectionhead {
-        margin-top: 58px;
+        margin-top: 54px;
         margin-bottom: 11px;
     }
 
@@ -66,6 +71,9 @@
         line-height: 1.75;
         font-weight: 300;
         display: block;
+        padding-top: 9px;
+        padding-left: 5px;
+        letter-spacing: 3px;
         color: #000;
     }
 
@@ -81,18 +89,18 @@
         transform: translate(50%, 0);
         transform: translate(-17%, 0);
         width: 20.3%;
-        bottom: 24px;
+        bottom: 21px;
     }
 
     .c-products__towels3 {
         right: 0;
         width: 26.7%;
-        bottom: -15%;
+        bottom: -16%;
     }
 
     .c-products__items {
         display: flex;
-        margin-top: 128px;
+        margin-top: 131px;
         justify-content: center;
     }
 
@@ -105,11 +113,8 @@
     }
 
     .c-product__itemimg {
-        background-color: #f1f1f1;
-        padding: 9px;
-
         img {
-            width: 140px;
+            width: 157px;
         }
     }
 
@@ -179,7 +184,7 @@
 
         .c-products__section {
             background: #e4f1ff;
-            padding: 78px 55px 74px;
+            padding: 73px 55px 74px;
         }
 
         .c-products__sectiontitle {
@@ -187,15 +192,15 @@
                 background: url(../../assets/img/baby-bg.png);
                 background-size: contain;
                 background-repeat: no-repeat;
-                width: 169px;
-                height: 173px;
-                right: -54px;
-                top: -25px;
+                width: 175px;
+                height: 175px;
+                right: -60px;
+                top: -20px;
             }
         }
 
         .c-products__sectiontitlejp {
-            margin-top: 20px;
+            margin-top: 16px;
         }
 
         .c-products__sectionhead {
@@ -206,13 +211,113 @@
         .c-products__sectiondes {
             line-height: 2.16;
         }
-
-       
     }
 
     .c-products__itemsbaby {
-        margin-top: 53px;
+        margin-top: 40px;
     }
 
-    
+    .c-products__lady {
+        margin-top: 261px;
+
+        .c-products__section {
+            background: #f4e5e8;
+        }
+
+        .c-products__sectiontitle {
+            &::after {
+                background: url(../../assets/img/lady-bg.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 66px;
+                height: 290px;
+                right: -106px;
+                top: -37px;
+            }
+        }
+
+        .c-products__sectiontitlejp {
+            margin-top: 16px;
+        }
+
+        .c-products__lady1 {
+            top: 0;
+            transform: translateY(-26.7%);
+            width: 53.4%;
+            right: 0;
+        }
+
+        .c-products__lady2 {
+            bottom: 15.5%;
+            left: 50%;
+            transform: translate(-17%, 0);
+            width: 20.3%;
+        }
+
+        .c-products__lady3 {
+            bottom: -0.2%;
+            right: 0;
+            width: 26.7%;
+        }
+    }
+
+    .c-products__itemslady {
+        margin-top: 63px;
+    }
+
+    .c-products__interior {
+        margin-top: 259px;
+
+        .c-products__section {
+            background: #e4f1ff;
+            padding: 73px 55px 74px;
+        }
+
+        .c-products__sectiontitle {
+            &::after {
+                background: url(../../assets/img/baby-bg.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 175px;
+                height: 175px;
+                right: -60px;
+                top: -20px;
+            }
+        }
+
+        .c-products__section2title {
+            padding-right: 63px;
+        }
+
+        .c-products__sectiontitlejp {
+            margin-top: 29px;
+        }
+
+        .c-products__section2head {
+            margin-top: 51px;
+            padding-right: 88px;
+        }
+
+        .c-products__sectiondes {
+            line-height: 1.96;
+
+            padding-right: 42px;
+        }
+    }
+
+    .c-products__interior1 {
+        top: 1.2%;
+    }
+
+    .c-products__interior2 {
+        bottom: 12.6%;
+    }
+
+    .c-products__interior3 {
+        bottom: 3.4%;
+    }
+
+    .c-products__itemsinterior {
+        margin-top: 52px;
+    }
 }

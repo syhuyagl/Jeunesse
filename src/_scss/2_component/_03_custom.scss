@@ -7,6 +7,8 @@
         letter-spacing: 0.08em;
         color: #000;
         text-align: center;
+        font-family: "Sawarabi Mincho", serif;
+        font-feature-settings: "palt" 1;
     }
 
     .c-custom__samples {
@@ -22,14 +24,31 @@
     }
 
     .c-custom__content {
-        width: 30%;
         color: #000;
         font-size: 1.4rem;
         font-weight: 500;
         line-height: 1.96;
+        width: 30.4%;
+    }
+
+    .c-custom__description {
+        padding-top: 21px;
+
     }
 
     .c-custom__image {
         width: 30.9%;
+    }
+
+    .c-custom__contact {
+        margin-top: 43px;
+    }
+
+    .c-custom__tel {
+        font-size: 1.7rem;
+    }
+
+    .c-custom__hour {
+        font-size: 1.4rem;
     }
 }

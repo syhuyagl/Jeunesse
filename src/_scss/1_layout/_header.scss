@@ -22,11 +22,13 @@
     .c-header__title {
         display: block;
         text-align: center;
+        font-family: "Sawarabi Mincho", serif;
     }
 
     .c-header__titleen {
         font-size: 1.6rem;
         font-weight: 700;
+        line-height: 1.4;
         color: #000;
     }
 
@@ -34,6 +36,7 @@
         font-size: 1.2rem;
         font-weight: 300;
         color: #989898;
+        font-family: "Noto Serif JP", serif;
     }
 }
 

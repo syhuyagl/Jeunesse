@@ -1,7 +1,23 @@
 /* Header
 ------------------------------------------------------------*/
 .c-header {
-    position: relative;
+    @include sp {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background: #fff;
+    }
+
+    .c-header__wrapper {
+        position: relative;
+        @include sp {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
 
     .c-header__logo {
         text-align: center;
@@ -34,7 +50,7 @@
         max-width: 840px;
         margin: 43px auto 0;
         @include tab {
-            display: block;
+            display: flex;
         }
         @include sp {
             display: none;
@@ -67,11 +83,80 @@
         position: fixed;
         background: #fff;
         z-index: 999;
+        transform: translateX(100%);
+        transition: 0.4s;
+        overflow: scroll;
+
+        &.c-header__overlay--active {
+            transform: translateX(0);
+        }
     }
 
     .c-header__navoverlay {
         li {
             padding: 15px 0;
+        }
+    }
+
+    .c-header__menu {
+        display: none;
+        width: 34px;
+        height: 27px;
+        position: relative;
+        transform: rotate(0deg);
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+
+        span {
+            display: block;
+            position: absolute;
+            height: 5px;
+            width: 100%;
+            background: #5a9da4;
+            border-radius: 9px;
+            opacity: 1;
+            left: 0;
+            transform: rotate(0deg);
+            transition: 0.25s ease-in-out;
+
+            &:nth-child(1) {
+                top: 0;
+                transform-origin: left center;
+            }
+
+            &:nth-child(2) {
+                top: 10px;
+                transform-origin: left center;
+            }
+
+            &:nth-child(3) {
+                top: 20px;
+                transform-origin: left center;
+            }
+        }
+
+        &.is-active {
+            span {
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                    top: -2px;
+                    left: 5px;
+                }
+
+                &:nth-child(2) {
+                    width: 0%;
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-45deg);
+                    top: 22px;
+                    left: 5px;
+                }
+            }
+        }
+        @include sp {
+            display: block;
         }
     }
 }
@@ -88,8 +173,6 @@
     img {
         width: 21px;
     }
-
-    
 }
 
 .c-sns__overlay {

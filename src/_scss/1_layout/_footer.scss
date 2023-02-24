@@ -49,10 +49,17 @@ footer
         @include sp {
             font-size: 1.4rem * 0.75;
             margin-top: 20px;
+            padding-bottom: 20px;
         }
     }
 
     .c-sns {
         top: 76%;
+        @include sp {
+            top: 69%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: fit-content;
+        }
     }
 }

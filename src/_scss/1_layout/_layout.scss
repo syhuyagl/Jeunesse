@@ -18,6 +18,9 @@ body {
     @include tab {
         max-width: 720px;
     }
+    @include sp {
+        max-width: 490px;
+    }
 }
 //-------------------------------------------------------
 .is-pc {

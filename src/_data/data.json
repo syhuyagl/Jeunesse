@@ -4,32 +4,32 @@
       {
         "title": "towel",
         "titlejp":"タオル",
-        "url": "/"
+        "url": "#towel"
       },
       {
         "title": "baby & kids",
         "titlejp":"ベビー・子ども服",
-        "url": "/about.html"
+        "url": "#baby"
       },
       {
         "title": "ladies' wear",
         "titlejp":"婦人服",
-        "url": "/nested/"
+        "url": "#lady"
       },
       {
         "title": "Interior goods",
         "titlejp":"生活雑貨",
-        "url": "/nested/"
+        "url": "#interior"
       },
       {
         "title": "shop Information",
         "titlejp":"店舗案内",
-        "url": "/nested/"
+        "url": "#info"
       },
       {
         "title": "blog",
         "titlejp":"ブログ",
-        "url": "/nested/"
+        "url": "#"
       }
     ]
   }

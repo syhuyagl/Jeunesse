@@ -2,26 +2,31 @@
 // clearfix
 //============================================
 @mixin clear {
-    *zoom: 1;
+  *zoom: 1;
 
-    &::after {
-        display: block;
-        content: "";
-        clear: both;
-    }
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
 }
 
 //============================================
 // breakpoint
 //============================================
 @mixin sp {
-    @media only screen and (max-width: 767px) {
-        @content;
-    }
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
 }
 
 @mixin tab {
-    @media only screen and (max-width: 1024px) {
-        @content;
-    }
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin safari {
+  @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
+    @content;
+  }
 }

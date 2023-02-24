@@ -180,7 +180,8 @@
       &:nth-child(2n) {
         margin-right: 0;
       }
-      &:nth-child(2n + 1), &:not(:first-child) {
+      &:nth-child(2n + 1),
+      &:not(:first-child) {
         margin-top: 20px;
       }
     }
@@ -433,6 +434,11 @@
         right: -26px;
         top: 64px;
       }
+      @include tab {
+        &::after {
+          right: -13px;
+        }
+      }
       @include sp {
         &::after {
           width: 134px;
@@ -446,7 +452,7 @@
     .c-products__section2title {
       padding-right: 63px;
       @include tab {
-        padding-right: 22px;
+        padding-right: 0;
       }
     }
 

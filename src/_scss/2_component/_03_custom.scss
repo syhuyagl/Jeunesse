@@ -10,13 +10,13 @@
         letter-spacing: 0.08em;
         color: #000;
         text-align: center;
+        font-weight: 400;
         font-family: "Sawarabi Mincho", serif;
         font-feature-settings: "palt" 1;
         @include sp {
             font-size: (2.5rem * 0.75);
         }
     }
-
     .c-custom__samples {
         display: flex;
         margin-top: 34px;

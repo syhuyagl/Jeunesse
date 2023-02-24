@@ -22,6 +22,7 @@ $(document).ready(function () {
     $(".c-header__overlay").toggleClass("c-header__overlay--active");
     if ($(".c-header__overlay").hasClass("c-header__overlay--active")) {
       disableScroll();
+      $(".c-header__overlay").css('transition', 'transform 0.4s');
     } else {
       enableScroll();
     }

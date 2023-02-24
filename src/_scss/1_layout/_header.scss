@@ -1,181 +1,181 @@
 /* Header
 ------------------------------------------------------------*/
 .c-header {
+  @include sp {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #fff;
+  }
+
+  .c-header__wrapper {
+    position: relative;
     @include sp {
-        position: fixed;
-        width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .c-header__logo {
+    text-align: center;
+    margin-top: 63px;
+
+    img {
+      width: 192px;
+    }
+    @include tab {
+      margin-top: 38px;
+
+      img {
+        width: 132px;
+      }
+    }
+    @include sp {
+      padding: 22px 0;
+      margin-top: 0;
+      text-align: left;
+
+      img {
+        width: 82px;
+      }
+    }
+  }
+
+  .c-header__nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 840px;
+    margin: 43px auto 0;
+    @include tab {
+      display: flex;
+    }
+    @include sp {
+      display: none;
+    }
+  }
+
+  .c-header__title {
+    display: block;
+    text-align: center;
+  }
+
+  .c-header__titleen {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.4;
+    font-family: "Sawarabi Mincho", serif;
+    color: #000;
+  }
+
+  .c-header__titlejp {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #989898;
+    font-family: "Noto Serif JP", serif;
+  }
+
+  .c-header__overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #fff;
+    z-index: 999;
+    transform: translateX(100%);
+    overflow: scroll;
+
+    &.c-header__overlay--active {
+      transform: translateX(0);
+      transition: 0.4s;
+    }
+  }
+
+  .c-header__navoverlay {
+    li {
+      padding: 15px 0;
+    }
+  }
+
+  .c-header__menu {
+    display: none;
+    width: 34px;
+    height: 27px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+    span {
+      display: block;
+      position: absolute;
+      height: 5px;
+      width: 100%;
+      background: #5a9da4;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+
+      &:nth-child(1) {
         top: 0;
-        left: 0;
-        z-index: 999;
-        background: #fff;
+        transform-origin: left center;
+      }
+
+      &:nth-child(2) {
+        top: 10px;
+        transform-origin: left center;
+      }
+
+      &:nth-child(3) {
+        top: 20px;
+        transform-origin: left center;
+      }
     }
 
-    .c-header__wrapper {
-        position: relative;
-        @include sp {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+    &.is-active {
+      span {
+        &:nth-child(1) {
+          transform: rotate(45deg);
+          top: -2px;
+          left: 5px;
         }
+
+        &:nth-child(2) {
+          width: 0%;
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+          top: 22px;
+          left: 5px;
+        }
+      }
     }
-
-    .c-header__logo {
-        text-align: center;
-        margin-top: 63px;
-
-        img {
-            width: 192px;
-        }
-        @include tab {
-            margin-top: 38px;
-
-            img {
-                width: 132px;
-            }
-        }
-        @include sp {
-            padding: 22px 0;
-            margin-top: 0;
-            text-align: left;
-
-            img {
-                width: 82px;
-            }
-        }
+    @include sp {
+      display: block;
     }
-
-    .c-header__nav {
-        display: flex;
-        justify-content: space-between;
-        max-width: 840px;
-        margin: 43px auto 0;
-        @include tab {
-            display: flex;
-        }
-        @include sp {
-            display: none;
-        }
-    }
-
-    .c-header__title {
-        display: block;
-        text-align: center;
-    }
-
-    .c-header__titleen {
-        font-size: 1.6rem;
-        font-weight: 700;
-        line-height: 1.4;
-        font-family: "Sawarabi Mincho", serif;
-        color: #000;
-    }
-
-    .c-header__titlejp {
-        font-size: 1.2rem;
-        font-weight: 300;
-        color: #989898;
-        font-family: "Noto Serif JP", serif;
-    }
-
-    .c-header__overlay {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        background: #fff;
-        z-index: 999;
-        transform: translateX(100%);
-        transition: 0.4s;
-        overflow: scroll;
-
-        &.c-header__overlay--active {
-            transform: translateX(0);
-        }
-    }
-
-    .c-header__navoverlay {
-        li {
-            padding: 15px 0;
-        }
-    }
-
-    .c-header__menu {
-        display: none;
-        width: 34px;
-        height: 27px;
-        position: relative;
-        transform: rotate(0deg);
-        transition: 0.5s ease-in-out;
-        cursor: pointer;
-
-        span {
-            display: block;
-            position: absolute;
-            height: 5px;
-            width: 100%;
-            background: #5a9da4;
-            border-radius: 9px;
-            opacity: 1;
-            left: 0;
-            transform: rotate(0deg);
-            transition: 0.25s ease-in-out;
-
-            &:nth-child(1) {
-                top: 0;
-                transform-origin: left center;
-            }
-
-            &:nth-child(2) {
-                top: 10px;
-                transform-origin: left center;
-            }
-
-            &:nth-child(3) {
-                top: 20px;
-                transform-origin: left center;
-            }
-        }
-
-        &.is-active {
-            span {
-                &:nth-child(1) {
-                    transform: rotate(45deg);
-                    top: -2px;
-                    left: 5px;
-                }
-
-                &:nth-child(2) {
-                    width: 0%;
-                    opacity: 0;
-                }
-
-                &:nth-child(3) {
-                    transform: rotate(-45deg);
-                    top: 22px;
-                    left: 5px;
-                }
-            }
-        }
-        @include sp {
-            display: block;
-        }
-    }
+  }
 }
 
 .c-sns {
-    position: absolute;
-    top: -9px;
-    right: 0;
+  position: absolute;
+  top: -9px;
+  right: 0;
 
-    a:first-child {
-        margin-right: 9px;
-    }
+  a:first-child {
+    margin-right: 9px;
+  }
 
-    img {
-        width: 21px;
-    }
+  img {
+    width: 21px;
+  }
 }
 
 .c-sns__overlay {
-    position: static;
-    text-align: center;
+  position: static;
+  text-align: center;
 }
